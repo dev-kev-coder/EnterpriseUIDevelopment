@@ -14,6 +14,7 @@ Start with the bottom requirements with `Systems` and work towards `Patterns`
 
 ## Testing Notes - End Goal is to close the feedback loop for the Development Team
 
+
 ### Specturm of testing - Apply what works with the Environment and the Team 
 `Unit` => `Component` => `End-to-End`
 
@@ -28,3 +29,6 @@ Start with the bottom requirements with `Systems` and work towards `Patterns`
 
 * `End-to-End` Un-Realistic: 
     - Biggest test that is from the Users perspectiv. This is the ideal end goal of the feature that is being tested (i.e. Client => Server => Database) (tigerbeetle database does a good job at this by creating virtual enviroments that could mimic all possible variables)
+
+### Tests pass because they don't fail
+This is bad if there is a test that does not have any assertions at all. What would be a good heuristic is to have an expectation of an assertion (test framework dependent)
